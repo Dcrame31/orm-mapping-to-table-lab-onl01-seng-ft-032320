@@ -42,7 +42,7 @@ class Student
   end
   
   def self.create(hash)
-    hash.each
+    hash.each {|name, grade| self.send()}
     student = Student.new(name, grade)
     student.save
     student
