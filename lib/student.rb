@@ -32,7 +32,9 @@ class Student
   
   def self.save
     sql = <<-SQL
-      INSERT INTO st
+      INSERT INTO students (
+        
+      )
     SQL
     
   end
