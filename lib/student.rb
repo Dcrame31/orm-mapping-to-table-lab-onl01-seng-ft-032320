@@ -42,8 +42,8 @@ class Student
   end
   
   def self.create(hash)
-    hash.each {|name, grade| self.send(("#{name}="), grade)}
-    student = Student.new(hash)
+    
+    student = Student.new(hash.hash.each {|name, grade| self.send(("#{name}="), grade)})
     student.save
     student
   end
